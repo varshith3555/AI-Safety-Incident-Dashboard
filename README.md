@@ -5,7 +5,6 @@ A dashboard application for tracking and analyzing AI safety incidents.
 ## Technologies Used
 
 - **Frontend**: React.js with TypeScript
-- **Backend**: Express.js (Node.js)
 - **Styling**: Tailwind CSS with Shadcn UI components
 - **Data Management**: React Query
 - **Routing**: Wouter
@@ -42,10 +41,11 @@ A dashboard application for tracking and analyzing AI safety incidents.
 
 ## Project Structure
 
-- `/client` - Frontend React application
-- `/server` - Backend Express server
-- `/db` - Database models and configuration
-- `/shared` - Shared types and utilities
+- `/src` - React application source code
+- `/public` - Static assets
+- `/components` - Reusable UI components
+- `/hooks` - Custom React hooks
+- `/pages` - Application pages and routing
 
 ## Build for Production
 
@@ -56,13 +56,13 @@ npm run start
 
 ## Design Decisions
 
-- **Unified Server/Client Setup**: The project uses a unified setup where both the frontend and backend run on the same port (5000), simplifying deployment and development.
-
 - **TypeScript**: Used throughout the project to provide type safety and improve development experience.
 
 - **Component Library**: Utilized Shadcn UI components with Tailwind CSS for a consistent and accessible user interface.
 
-- **API Structure**: RESTful API endpoints are prefixed with `/api` to clearly separate them from frontend routes.
+- **State Management**: Implemented React Query for efficient data fetching, caching, and state management.
+
+- **Responsive Design**: Built with a mobile-first approach to ensure compatibility across all device sizes.
 
 ## License
 
